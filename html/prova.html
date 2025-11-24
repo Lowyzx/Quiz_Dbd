@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Dead by Daylight - Prova</title>
+    <link rel="stylesheet" href="../css/prova.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1> Quiz Dead by Daylight </h1>
+                <div class="progress-info">
+                    <span class="question-counter">Questão <span id="current-question">1</span> de 15</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="quiz-container">
+            <div class="quiz-wrapper" id="quiz-wrapper">
+                <!-- Questão 1 -->
+                <div class="question-card" data-question="1">
+                    <h2>1. Qual é o gênero de jogo ao qual Dead by Daylight pertence?</h2>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q1" value="a">
+                            <span class="option-label">a) Ação e Aventura</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q1" value="b" data-correct="true">
+                            <span class="option-label">b) Horror de Sobrevivência Assimétrico</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q1" value="c">
+                            <span class="option-label">c) RPG de Turnos</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q1" value="d">
+                            <span class="option-label">d) Estratégia Tática</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Questão 2 -->
+                <div class="question-card" data-question="2">
+                    <h2>2. Quantos jogadores atuam como sobreviventes em uma partida?</h2>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q2" value="a">
+                            <span class="option-label">a) Dois</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q2" value="b">
+                            <span class="option-label">b) Três</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q2" value="c" data-correct="true">
+                            <span class="option-label">c) Quatro</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q2" value="d">
+                            <span class="option-label">d) Cinco</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Questão 3 -->
+                <div class="question-card" data-question="3">
+                    <h2>3. Qual é o principal objetivo dos sobreviventes durante o jogo?</h2>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q3" value="a">
+                            <span class="option-label">a) Derrotar o assassino</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q3" value="b" data-correct="true">
+                            <span class="option-label">b) Reparar geradores e escapar</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q3" value="c">
+                            <span class="option-label">c) Eliminar todos os inimigos</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q3" value="d">
+                            <span class="option-label">d) Invocar a Entidade</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Questão 4 -->
+                <div class="question-card" data-question="4">
+                    <h2>4. Quem é a força sobrenatural responsável por controlar o ciclo de caçadas?</h2>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q4" value="a">
+                            <span class="option-label">a) O Trapper</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q4" value="b">
+                            <span class="option-label">b) O Observador</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q4" value="c" data-correct="true">
+                            <span class="option-label">c) A Entidade</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q4" value="d">
+                            <span class="option-label">d) A Caçadora</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Questão 5 -->
+                <div class="question-card" data-question="5">
+                    <h2>5. O que os jogadores precisam reparar para abrir os portões de saída?</h2>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q5" value="a">
+                            <span class="option-label">a) Totens</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q5" value="b" data-correct="true">
+                            <span class="option-label">b) Geradores</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q5" value="c">
+                            <span class="option-label">c) Alçapões</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q5" value="d">
+                            <span class="option-label">d) Luzes</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Questão 6 -->
+                <div class="question-card" data-question="6">
+                    <h2>6. Como é chamado o poder especial que cada assassino possui?</h2>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q6" value="a">
+                            <span class="option-label">a) Domínio</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q6" value="b" data-correct="true">
+                            <span class="option-label">b) Poder</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q6" value="c">
+                            <span class="option-label">c) Maldição</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q6" value="d">
+                            <span class="option-label">d) Ritual</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Questão 7 -->
+                <div class="question-card" data-question="7">
+                    <h2>7. Verdadeiro ou falso: todos os assassinos do jogo são criaturas sobrenaturais.</h2>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q7" value="a">
+                            <span class="option-label">a) Verdadeiro</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q7" value="b" data-correct="true">
+                            <span class="option-label">b) Falso</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Questão 8 -->
+                <div class="question-card" data-question="8">
+                    <h2>8. Qual desses assassinos foi mencionado na aula?</h2>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q8" value="a">
+                            <span class="option-label">a) The Ghost</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q8" value="b" data-correct="true">
+                            <span class="option-label">b) The Huntress</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q8" value="c">
+                            <span class="option-label">c) The Ripper</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q8" value="d">
+                            <span class="option-label">d) The Reaper</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Questão 9 -->
+                <div class="question-card" data-question="9">
+                    <h2>9. O que torna o gênero "horror assimétrico" diferente de outros estilos de jogo?</h2>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q9" value="a">
+                            <span class="option-label">a) Todos os jogadores têm o mesmo papel</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q9" value="b">
+                            <span class="option-label">b) O jogo não tem enredo</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q9" value="c" data-correct="true">
+                            <span class="option-label">c) Os jogadores têm papéis diferentes e desiguais</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q9" value="d">
+                            <span class="option-label">d) O jogo é sempre cooperativo</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Questão 10 -->
+                <div class="question-card" data-question="10">
+                    <h2>10. Qual é a principal arma dos sobreviventes contra o medo?</h2>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q10" value="a">
+                            <span class="option-label">a) Poderes sobrenaturais</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q10" value="b">
+                            <span class="option-label">b) Armas e explosivos</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q10" value="c" data-correct="true">
+                            <span class="option-label">c) Coragem, cooperação e estratégia</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q10" value="d">
+                            <span class="option-label">d) A ajuda da Entidade</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Questão 11 -->
+                <div class="question-card" data-question="11">
+                    <h2>11. O que a Entidade busca ao capturar vítimas?</h2>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q11" value="a">
+                            <span class="option-label">a) Expandir seu domínio</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q11" value="b" data-correct="true">
+                            <span class="option-label">b) Alimentar-se de sofrimento e sacrifício</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q11" value="c">
+                            <span class="option-label">c) Criar um novo mundo</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q11" value="d">
+                            <span class="option-label">d) Libertar os prisioneiros</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Questão 12 -->
+                <div class="question-card" data-question="12">
+                    <h2>12. Como a história de Dead by Daylight é contada?</h2>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q12" value="a">
+                            <span class="option-label">a) Por meio de cinemáticas longas</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q12" value="b" data-correct="true">
+                            <span class="option-label">b) Através dos mapas, descrições e diários dos personagens</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q12" value="c">
+                            <span class="option-label">c) Por meio de missões lineares</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q12" value="d">
+                            <span class="option-label">d) Através de diálogos com NPCs</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Questão 13 -->
+                <div class="question-card" data-question="13">
+                    <h2>13. Que tipos de locais servem como mapas no domínio da Entidade?</h2>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q13" value="a">
+                            <span class="option-label">a) Cidades futuristas e arenas</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q13" value="b" data-correct="true">
+                            <span class="option-label">b) Florestas, asilos e fazendas abandonadas</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q13" value="c">
+                            <span class="option-label">c) Planetas alienígenas</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q13" value="d">
+                            <span class="option-label">d) Ruínas subaquáticas</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Questão 14 -->
+                <div class="question-card" data-question="14">
+                    <h2>14. Por que muitos assassinos se tornam servos da Entidade?</h2>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q14" value="a" data-correct="true">
+                            <span class="option-label">a) Por desejo de poder, vingança ou libertação</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q14" value="b">
+                            <span class="option-label">b) Por medo dos sobreviventes</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q14" value="c">
+                            <span class="option-label">c) Porque foram forçados fisicamente</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q14" value="d">
+                            <span class="option-label">d) Para escapar do jogo</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Questão 15 -->
+                <div class="question-card" data-question="15">
+                    <h2>15. Complete a frase: "Em Dead by Daylight, não há heróis ou vilões absolutos — apenas _______."</h2>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q15" value="a">
+                            <span class="option-label">a) Vencedores e perdedores</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q15" value="b">
+                            <span class="option-label">b) Caçadores e presas</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q15" value="c" data-correct="true">
+                            <span class="option-label">c) Almas presas em um pesadelo sem fim</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q15" value="d">
+                            <span class="option-label">d) Jogadores e espectadores</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttons-container">
+                <button class="btn btn-previous" id="btn-previous">← Anterior</button>
+                <button class="btn btn-next" id="btn-next">Próximo →</button>
+                <button class="btn btn-submit" id="btn-submit" style="display: none;">Enviar Prova</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/prova.js"></script>
+</body>
+</html>

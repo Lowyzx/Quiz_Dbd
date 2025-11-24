@@ -1,0 +1,84 @@
+/* resultado.css - versão simples: lista de nomes, pontuação e classificação */
+
+:root{
+  --bg:#0f0f0f;
+  --card:#181818;
+  --accent:#d4433b;
+  --muted:#9aa0a6;
+  --text:#e6e6e6;
+  --success:#2ecc71;
+  --warning:#f1c40f;
+  --danger:#e74c3c;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(180deg,#0b0b0b 0%, #141414 100%);
+  color:var(--text);
+  padding:24px;
+}
+
+.wrap{
+  max-width:1100px;
+  margin:0 auto;
+}
+
+.top{
+  padding:18px 0 12px 0;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+
+.brand img{width:44px;height:44px;border-radius:6px}
+.brand h1{font-size:22px}
+.lead{color:var(--muted);margin-top:6px;font-size:14px}
+
+.content{margin-top:18px}
+
+.results-card{
+  background:var(--card);
+  border:1px solid rgba(255,255,255,0.04);
+  padding:20px;
+  border-radius:8px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.6);
+}
+
+.results-card h2{font-size:18px;margin-bottom:12px;color:var(--accent)}
+
+.table-wrap{overflow:auto}
+
+.results{width:100%;border-collapse:collapse}
+.results thead th{
+  text-align:left;padding:12px 14px;font-size:13px;color:var(--muted);
+  text-transform:uppercase;letter-spacing:0.6px;border-bottom:1px solid rgba(255,255,255,0.03)
+}
+
+.results tbody tr{border-bottom:1px solid rgba(255,255,255,0.02)}
+.results tbody td{padding:12px 14px;font-size:15px;color:var(--text)}
+.results tbody td:first-child{width:48px;font-weight:700;text-align:center}
+
+.badge{
+  display:inline-block;padding:6px 10px;border-radius:16px;font-size:13px;font-weight:700;
+}
+.badge.approved{background:rgba(46,204,113,0.12);color:var(--success);border:1px solid rgba(46,204,113,0.18)}
+.badge.warning{background:rgba(241,196,15,0.08);color:var(--warning);border:1px solid rgba(241,196,15,0.12)}
+.badge.rejected{background:rgba(231,76,60,0.08);color:var(--danger);border:1px solid rgba(231,76,60,0.12)}
+
+.note{color:var(--muted);font-size:13px;margin-top:10px}
+
+.actions{margin-top:16px;display:flex;gap:10px}
+.btn{display:inline-block;padding:10px 18px;border-radius:6px;border:2px solid rgba(255,255,255,0.06);color:var(--text);text-decoration:none;font-weight:700;background:transparent}
+.btn:hover{background:rgba(255,255,255,0.03);transform:translateY(-2px)}
+
+/* responsivo */
+@media (max-width:600px){
+  .results thead th{font-size:12px}
+  .results tbody td{font-size:14px;padding:10px}
+  .brand h1{font-size:18px}
+}
